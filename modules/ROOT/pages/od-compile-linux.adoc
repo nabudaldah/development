@@ -152,7 +152,9 @@ In order to be able to run OpenCPN from inside the IDE
 installed data needs to be copied to the build/ folder according to
 
   $ cd build
-  $ for d in gshhs s57data tcdata; do; cp -ar ../data/$d .; done
+  $ cp -ar ../data/gshhs .
+  $ cp -ar ../data/s57data .
+  $ cp -ar ../data/tcdata .
   $ mkdir uidata
   $ cp ../src/bitmaps/*.xml ../src/bitmaps/*.png ../src/bitmaps/*.svg uidata
   $ cp ../data/authors.html ../data/license.html .
